@@ -16,7 +16,7 @@ export default function Navbar() {
         <Iterate
           items={PROFILE_LINKS}
           render={(item, idx) => (
-            <a key={idx} target="_blank">
+            <a key={idx} href={item.url} target="_blank">
               <item.svg className="text-2xl" />
             </a>
           )}

@@ -1,13 +1,15 @@
-import localFont from "next/font/local";
+import { Oxygen, Oxygen_Mono } from "next/font/google";
 
-export const geistSans = localFont({
-  src: "./GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+export const oxygen = Oxygen({
+  weight: ["300", "400", "700"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-oxygen",
 });
 
-export const geistMono = localFont({
-  src: "./GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+export const oxygenMono = Oxygen_Mono({
+  weight: ["400"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-oxygen-mono",
 });

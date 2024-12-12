@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import React from "react";
-import { geistMono, geistSans } from "./fonts";
+import { oxygen, oxygenMono } from "./fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -16,7 +16,7 @@ export default function RootLayout({ children }: Props) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${oxygen.variable} ${oxygenMono.variable} antialiased font-sans`}
       >
         {children}
       </body>
