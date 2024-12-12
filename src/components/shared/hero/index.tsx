@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <div className="pb-4 lg:mb-36 relative bottom-8">
+    <section className="pb-4 lg:mb-36 relative bottom-2">
       <div className="flex flex-wrap lg:flex-row-reverse">
         {/* Picture */}
         <div className="w-full lg:w-1/2">
@@ -30,7 +30,7 @@ export default function Hero() {
             <p className="bg-gradient-to-r from-stone-300 font-extralight font-mono to-stone-600 bg-clip-text text-2xl lg:text-4xl text-transparent mb-4">
               I build the Web
             </p>
-            <p className="mb-8 text-center text-stone-300/80 lg:text-left tracking-tight">
+            <p className="mb-12 text-center text-stone-300/80 lg:text-left tracking-wider leading-loose">
               I&apos;m a software developer focused on building innovative web
               solutions and modern applications. Currently, I&apos;m enhancing
               my skills by joining a bootcamp at Purwadhika.
@@ -52,6 +52,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

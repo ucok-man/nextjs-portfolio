@@ -8,10 +8,6 @@ import project2 from "../assets/projects/project-2.webp";
 import project3 from "../assets/projects/project-3.webp";
 import project4 from "../assets/projects/project-4.webp";
 
-export const HERO_CONTENT = `I am a dedicated DevOps engineer with a passion for streamlining development and deployment processes. With 5 years of hands-on experience, I have mastered tools and practices like Docker, Kubernetes, CI/CD pipelines, Terraform, and cloud platforms such as AWS and Azure. My goal is to leverage my expertise to build reliable infrastructure, automate workflows, and enhance collaboration between development and operations teams, driving efficient and scalable solutions for business success.`;
-
-export const ABOUT_TEXT = `As a DevOps engineer with 5 years of professional experience, I specialize in bridging the gap between development and operations to enable seamless software delivery. My expertise lies in leveraging tools like Docker, Kubernetes, Terraform, and CI/CD pipelines to create scalable, automated, and secure infrastructures. I am passionate about adopting modern DevOps practices that foster agility and resilience in development workflows. I enjoy tackling challenges that require innovative thinking, whether it's optimizing deployment pipelines or architecting cloud solutions on platforms like AWS and Azure. When not immersed in technology, I enjoy exploring new methodologies, mentoring aspiring engineers, and contributing to community-driven projects.`;
-
 export const PROFILE_LINKS = [
   {
     svg: linkedin,
