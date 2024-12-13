@@ -13,7 +13,7 @@ export default function Projects() {
         <Iterate
           items={PROJECTS}
           render={(item, idx) => (
-            <>
+            <div key={idx}>
               <If condition={(idx + 1) % 2 === 0}>
                 <div
                   key={idx}
@@ -74,7 +74,7 @@ export default function Projects() {
                   </div>
                 </div>
               </If>
-            </>
+            </div>
           )}
         />
       </div>

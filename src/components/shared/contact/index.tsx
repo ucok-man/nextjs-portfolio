@@ -21,9 +21,7 @@ export default function ContactSection() {
           <Button
             variant="outline"
             className="bg-stone-800 text-stone-300 hover:bg-stone-700 hover:text-stone-200"
-            onClick={() =>
-              window.open("https://wa.me/yourphonenumber", "_blank")
-            }
+            onClick={() => window.open("https://wa.me/082137138800", "_blank")}
           >
             <WAIcon className="text-green-700" />
             WhatsApp
@@ -31,9 +29,7 @@ export default function ContactSection() {
           <Button
             variant="outline"
             className="bg-stone-800 text-stone-300 hover:bg-stone-700 hover:text-stone-200"
-            onClick={() =>
-              window.open("https://linkedin.com/in/yourprofile", "_blank")
-            }
+            onClick={() => window.open("https://linkedin.com", "_blank")}
           >
             <LinkedinIcon className="text-sky-400" />
             LinkedIn
@@ -42,7 +38,7 @@ export default function ContactSection() {
             variant="outline"
             className="bg-stone-800 text-stone-300 hover:bg-stone-700 hover:text-stone-200"
             onClick={() =>
-              (window.location.href = "mailto:your.email@example.com")
+              (window.location.href = "mailto:example@example.com")
             }
           >
             <EmailIcon className="text-stone-300" />

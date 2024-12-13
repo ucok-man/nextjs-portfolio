@@ -31,7 +31,9 @@ export default function Testimonial() {
                     <Iterate
                       items={[1, 2, 3, 4, 5]}
                       render={(item, idx) => (
-                        <RiStarFill className="text-yellow-500 text-lg" />
+                        <span key={idx}>
+                          <RiStarFill className="text-yellow-500 text-lg" />
+                        </span>
                       )}
                     />
                   </div>
