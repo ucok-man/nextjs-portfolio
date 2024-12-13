@@ -7,9 +7,9 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <section className="pb-4 lg:mb-36 relative bottom-2">
-      <div className="flex flex-wrap lg:flex-row-reverse">
+      <div className="flex flex-wrap lg:flex-row-reverse justify-center lg:justify-between">
         {/* Picture */}
-        <div className="w-full lg:w-1/2">
+        <div className="">
           <motion.div
             className="flex justify-center lg:p-8"
             initial={{ x: 100, opacity: 0 }}
@@ -17,17 +17,17 @@ export default function Hero() {
             transition={{ duration: 0.5 }}
           >
             <Image
-              src="/funny-man-rmbg.png"
+              src="/profile.png"
               alt="Profile Pic"
               width={500}
               height={500}
-              className="border object-contain w-full h-full max-h-[500px] border-none rounded-3xl"
+              className="border object-contain w-full h-full max-h-[300px] lg:max-h-[500px] border-none rounded-3xl mb-[0.6rem]"
             />
           </motion.div>
         </div>
 
         {/* Hero Text */}
-        <div className="w-full lg:w-1/2">
+        <div className="w-full lg:w-1/2 ">
           <motion.div
             className=" flex flex-col items-center lg:items-start"
             initial="hidden"

@@ -3,9 +3,9 @@ import instagram from "../assets/navbar/instagram.svg";
 import linkedin from "../assets/navbar/linkedin.svg";
 import twitter from "../assets/navbar/x.svg";
 
-import project1 from "../assets/projects/project-1.webp";
-import project2 from "../assets/projects/project-2.webp";
-import project3 from "../assets/projects/project-3.webp";
+import project1 from "../assets/projects/project1.webp";
+import project2 from "../assets/projects/project2.webp";
+import project3 from "../assets/projects/project3.webp";
 
 export const PROFILE_LINKS = [
   {
@@ -52,25 +52,31 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "Cloud Deployment Automation",
+    title: "E-Commerce Platform",
     image: project1,
     description:
-      "Developed a system to automate cloud resource provisioning and deployment processes using Terraform and AWS CloudFormation, reducing setup time by 80%.",
-    technologies: ["AWS", "Terraform", "CloudFormation", "Python"],
+      "Built a full-stack e-commerce platform featuring user authentication, product browsing, shopping cart functionality, and payment gateway integration. Enhanced SEO and performance with server-side rendering.",
+    technologies: ["React", "Next.js", "Node.js", "MongoDB", "Stripe"],
   },
   {
-    title: "Kubernetes Monitoring Dashboard",
+    title: "Social Media Application",
     image: project2,
     description:
-      "Created a real-time monitoring dashboard for Kubernetes clusters using Prometheus and Grafana, enabling detailed performance metrics and alerts.",
-    technologies: ["Kubernetes", "Prometheus", "Grafana", "Helm"],
+      "Developed a social media app with real-time chat, user posts, likes, and comments. Implemented WebSocket for live updates and a cloud-based media storage system.",
+    technologies: [
+      "React.js",
+      "Express.js",
+      "Firebase",
+      "WebSocket",
+      "PostgreSQL",
+    ],
   },
   {
-    title: "CI/CD Pipeline Optimization",
+    title: "Project Management Tool",
     image: project3,
     description:
-      "Designed and optimized CI/CD pipelines for a large-scale application, integrating Jenkins and Docker to enable faster builds and deployments.",
-    technologies: ["Jenkins", "Docker", "GitLab CI", "Bash"],
+      "Created a project management tool with task tracking, team collaboration, and Gantt chart visualization. Designed a role-based access system for user management.",
+    technologies: ["React", "NestJS", "MySQL", "Redis", "Docker"],
   },
 ];
 
