@@ -1,19 +1,32 @@
+"use client";
+
 import { Iterate } from "@/components/utility";
 import { TESTIMONIALS } from "@/constant";
+import { motion } from "motion/react";
 import Image from "next/image";
 import { RiStarFill } from "react-icons/ri";
 
 export default function Testimonial() {
   return (
     <section className="pb-4 lg:mb-36">
-      <h2 className="my-20 text-center text-4xl">What other says</h2>
+      <motion.h2
+        className="my-20 text-center text-4xl"
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: -100 }}
+        transition={{ duration: 0.5 }}
+      >
+        What other says
+      </motion.h2>
       <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <Iterate
           items={TESTIMONIALS}
           render={(item, idx) => (
-            <div
+            <motion.div
               key={idx}
               className="flex flex-col max-w-sm shadow-inner shadow-stone-300/30 p-4 rounded-lg"
+              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, y: -100 }}
+              transition={{ duration: 0.5 + idx }}
             >
               <p className="leading-loose text-balance mb-4 min-h-40 max-h-40 line-clamp-5 min-w-72 max-w-72 text-stone-400">
                 {item.testimonial}
@@ -43,7 +56,7 @@ export default function Testimonial() {
                   </span>
                 </div>
               </div>
-            </div>
+            </motion.div>
           )}
         />
       </div>

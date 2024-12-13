@@ -5,14 +5,25 @@ import EmailIcon from "@/assets/navbar/minutemailer.svg";
 import WAIcon from "@/assets/navbar/whatsapp.svg";
 
 import { Button } from "@/components/ui/button";
+import { motion } from "motion/react";
 
 export default function ContactSection() {
   return (
     <section className="pb-4 lg:mb-36">
-      <h2 className="my-20 text-center text-4xl text-stone-300">
+      <motion.h2
+        className="my-20 text-center text-4xl text-stone-300"
+        initial={{ x: 100, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.5 }}
+      >
         Get in Touch
-      </h2>
-      <div className="max-w-screen-xl mx-auto flex flex-col items-center">
+      </motion.h2>
+      <motion.div
+        className="max-w-screen-xl mx-auto flex flex-col items-center"
+        initial={{ x: 100, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.5 }}
+      >
         <p className="text-center text-stone-400 mb-8 max-w-2xl">
           I'm always open to new opportunities and collaborations. Feel free to
           reach out through any of the following channels:
@@ -45,7 +56,7 @@ export default function ContactSection() {
             Email
           </Button>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

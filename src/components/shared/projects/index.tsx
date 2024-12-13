@@ -1,23 +1,38 @@
+"use client";
+
 import { If, Iterate } from "@/components/utility";
 import { PROJECTS } from "@/constant";
+import { motion } from "motion/react";
 import Image from "next/image";
 import Tag from "../tag";
 
 export default function Projects() {
   return (
     <section className="pb-4 lg:mb-36">
-      <h2 className="my-20 mb-36 text-center text-4xl text-stone-300">
+      <motion.h2
+        className="my-20 mb-36 text-center text-4xl text-stone-300"
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: -100 }}
+        transition={{ duration: 0.5 }}
+      >
         Projects I&apos;m proud of
-      </h2>
-      <div>
+      </motion.h2>
+      <motion.div
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: -100 }}
+        transition={{ duration: 0.5 }}
+      >
         <Iterate
           items={PROJECTS}
           render={(item, idx) => (
             <div key={idx}>
               <If condition={(idx + 1) % 2 === 0}>
-                <div
+                <motion.div
                   key={idx}
                   className="mb-10 flex flex-wrap items-center lg:mb-10 lg:relative lg:justify-end lg:text-right"
+                  whileInView={{ x: 0, opacity: 1 }}
+                  initial={{ x: 100, opacity: 0 }}
+                  transition={{ duration: 0.5 }}
                 >
                   <div className="w-full lg:flex lg:items-center lg:absolute lg:-z-10 lg:border lg:border-stone-300/30 lg:w-1/4 lg:border-b-0 lg:border-l-0 lg:rounded-lg overflow-hidden lg:p-2">
                     <Image
@@ -42,12 +57,15 @@ export default function Projects() {
                       />
                     </div>
                   </div>
-                </div>
+                </motion.div>
               </If>
               <If condition={(idx + 1) % 2 !== 0}>
-                <div
+                <motion.div
                   key={idx}
                   className="mb-10 flex flex-wrap items-center lg:mb-10 lg:relative lg:justify-start lg:text-left"
+                  whileInView={{ x: 0, opacity: 1 }}
+                  initial={{ x: -100, opacity: 0 }}
+                  transition={{ duration: 0.5 }}
                 >
                   <div className="w-full lg:flex lg:items-center lg:absolute lg:-z-10 lg:border lg:border-stone-300/30 lg:w-1/4 lg:border-b-0 lg:border-r-0 lg:rounded-lg overflow-hidden lg:p-2">
                     <Image
@@ -72,12 +90,12 @@ export default function Projects() {
                       />
                     </div>
                   </div>
-                </div>
+                </motion.div>
               </If>
             </div>
           )}
         />
-      </div>
+      </motion.div>
     </section>
   );
 }
