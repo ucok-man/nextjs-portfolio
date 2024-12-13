@@ -13,7 +13,7 @@ export default function Testimonial() {
           render={(item, idx) => (
             <div
               key={idx}
-              className="flex flex-col max-w-sm shadow-inner shadow-stone-300/40 p-4 rounded-lg"
+              className="flex flex-col max-w-sm shadow-inner shadow-stone-300/30 p-4 rounded-lg"
             >
               <p className="leading-loose text-balance mb-4 min-h-40 max-h-40 line-clamp-5 min-w-72 max-w-72 text-stone-400">
                 {item.testimonial}

@@ -97,9 +97,3 @@ export const TESTIMONIALS = [
     title: "Product Manager at Startup Labs",
   },
 ];
-
-export const CONTACT = {
-  address: "1600 Amphitheatre Parkway, Mountain View, CA 94043",
-  phoneNo: "+1 800 123 4567",
-  email: "contact@myportfolio.com",
-};

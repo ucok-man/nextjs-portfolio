@@ -1,4 +1,5 @@
 import AboutMe from "@/components/shared/about";
+import ContactSection from "@/components/shared/contact";
 import Experiences from "@/components/shared/experiences";
 import Hero from "@/components/shared/hero";
 import Navbar from "@/components/shared/navbar";
@@ -25,6 +26,7 @@ export default function HomePage() {
         <Projects />
         <Experiences />
         <Testimonial />
+        <ContactSection />
       </div>
     </main>
   );
