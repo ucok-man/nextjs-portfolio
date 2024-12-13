@@ -6,7 +6,7 @@ export default function Experiences() {
   return (
     <section>
       <div className="pb-4 lg:mb-36">
-        <h2 className="my-20 text-center text-4xl">Experience</h2>
+        <h2 className="my-20 text-center text-4xl">My Experiences</h2>
         <div>
           <Iterate
             items={EXPERIENCES}
@@ -24,7 +24,7 @@ export default function Experiences() {
                       {item.company}
                     </span>
                   </h3>
-                  <p className="mb-4 text-stone-400 leading-loose">
+                  <p className="mb-4 text-stone-400 leading-loose ">
                     {item.description}
                   </p>
                   <div className="flex items-center flex-wrap">

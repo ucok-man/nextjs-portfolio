@@ -4,6 +4,7 @@ import Hero from "@/components/shared/hero";
 import Navbar from "@/components/shared/navbar";
 import Projects from "@/components/shared/projects";
 import Technology from "@/components/shared/technology";
+import Testimonial from "@/components/shared/testimonial";
 
 export default function HomePage() {
   return (
@@ -23,6 +24,7 @@ export default function HomePage() {
         <Technology />
         <Projects />
         <Experiences />
+        <Testimonial />
       </div>
     </main>
   );

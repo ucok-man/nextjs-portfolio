@@ -6,7 +6,6 @@ import twitter from "../assets/navbar/x.svg";
 import project1 from "../assets/projects/project-1.webp";
 import project2 from "../assets/projects/project-2.webp";
 import project3 from "../assets/projects/project-3.webp";
-import project4 from "../assets/projects/project-4.webp";
 
 export const PROFILE_LINKS = [
   {
@@ -49,13 +48,6 @@ export const EXPERIENCES = [
     description: `Designed and managed cloud infrastructure for high-traffic applications. Implemented monitoring and logging solutions using Prometheus and Grafana. Assisted in migrating legacy systems to Google Cloud Platform, ensuring minimal service disruption.`,
     technologies: ["Google Cloud", "Prometheus", "Grafana", "Python", "Helm"],
   },
-  {
-    year: "2019 - 2020",
-    role: "Systems Engineer",
-    company: "Red Hat",
-    description: `Optimized Linux server environments for enterprise applications. Automated routine tasks and system updates using Bash scripts and Puppet. Supported DevOps teams in transitioning to containerized applications with Docker.`,
-    technologies: ["Linux", "Puppet", "Docker", "Bash", "Nagios"],
-  },
 ];
 
 export const PROJECTS = [
@@ -80,12 +72,29 @@ export const PROJECTS = [
       "Designed and optimized CI/CD pipelines for a large-scale application, integrating Jenkins and Docker to enable faster builds and deployments.",
     technologies: ["Jenkins", "Docker", "GitLab CI", "Bash"],
   },
+];
+
+export const TESTIMONIALS = [
   {
-    title: "Multi-Cloud Migration Strategy",
-    image: project4,
-    description:
-      "Executed a migration strategy for transitioning on-premise applications to a multi-cloud environment, ensuring high availability and minimal downtime.",
-    technologies: ["Google Cloud", "Azure", "Ansible", "Linux"],
+    profilePic: "/testimonial.png",
+    testimonial:
+      "Alvin's ability to seamlessly bridge the gap between front-end design and back-end functionality is unmatched. Her commitment to delivering high-quality solutions is evident in every project she undertakes.",
+    name: "Samantha Lee",
+    title: "CTO at Tech Innovators",
+  },
+  {
+    profilePic: "/testimonial.png",
+    testimonial:
+      "Alvin has a rare talent for simplifying complex concepts. Her teaching not only builds technical skills but also instills confidence in her students. She is a true mentor and inspiration.",
+    name: "Michael Johnson",
+    title: "Founder at Code Academy",
+  },
+  {
+    profilePic: "/testimonial.png",
+    testimonial:
+      "Working with Alvin has been an absolute privilege. Her expertise in modern frameworks and focus on user experience make her an invaluable contributor to any development team.",
+    name: "Emily Carter",
+    title: "Product Manager at Startup Labs",
   },
 ];
 
