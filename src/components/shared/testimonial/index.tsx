@@ -23,12 +23,12 @@ export default function Testimonial() {
           render={(item, idx) => (
             <motion.div
               key={idx}
-              className="flex flex-col max-w-sm shadow-inner shadow-stone-300/30 p-4 rounded-lg"
+              className="flex flex-col max-w-sm shadow-inner shadow-gray-300/30 p-4 rounded-lg"
               whileInView={{ opacity: 1, y: 0 }}
               initial={{ opacity: 0, y: -100 }}
               transition={{ duration: 0.5 + idx }}
             >
-              <p className="leading-loose text-balance mb-4 min-h-40 max-h-40 line-clamp-5 min-w-72 max-w-72 text-stone-400">
+              <p className="leading-loose text-balance mb-4 min-h-40 max-h-40 line-clamp-5 min-w-72 max-w-72 text-gray-400">
                 {item.testimonial}
               </p>
               <div className="flex gap-2">
@@ -51,7 +51,7 @@ export default function Testimonial() {
                     />
                   </div>
                   <span className="text-lg">{item.name}</span>
-                  <span className="text-stone-300/80 tracking-tight">
+                  <span className="text-gray-300/80 tracking-tight">
                     {item.title}
                   </span>
                 </div>

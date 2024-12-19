@@ -10,7 +10,7 @@ export default function Highlight({ children, className }: Props) {
   return (
     <span
       className={cn(
-        "font-mono font-extralight bg-gradient-to-r from-moody-500 via-stone-600 to-moody-800 bg-clip-text text-base text-transparent",
+        "font-mono font-extralight bg-gradient-to-r from-moody-500 to-moody-800 bg-clip-text text-base text-transparent",
         className
       )}
     >

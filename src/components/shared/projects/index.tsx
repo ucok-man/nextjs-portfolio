@@ -10,7 +10,7 @@ export default function Projects() {
   return (
     <section className="pb-4 lg:mb-36">
       <motion.h2
-        className="my-20 mb-36 text-center text-4xl text-stone-300"
+        className="my-20 mb-36 text-center text-4xl text-gray-300"
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 0.5 }}
@@ -34,7 +34,7 @@ export default function Projects() {
                   initial={{ x: 100, opacity: 0 }}
                   transition={{ duration: 0.5 }}
                 >
-                  <div className="w-full lg:flex lg:items-center lg:absolute lg:-z-10 lg:border lg:border-stone-300/30 lg:w-1/4 lg:border-b-0 lg:border-l-0 lg:rounded-lg overflow-hidden lg:p-2">
+                  <div className="w-full lg:flex lg:items-center lg:absolute lg:-z-10 lg:border lg:border-gray-300/30 lg:w-1/4 lg:border-b-0 lg:border-l-0 lg:rounded-lg overflow-hidden lg:p-2">
                     <Image
                       src={item.image}
                       alt={item.title}
@@ -47,7 +47,7 @@ export default function Projects() {
                     <h3 className="mb-2 font-semibold text-2xl">
                       {item.title}
                     </h3>
-                    <p className="mb-4 text-stone-400 leading-loose">
+                    <p className="mb-4 text-gray-400 leading-loose">
                       {item.description}
                     </p>
                     <div className="lg:flex lg:items-center lg:justify-end lg:flex-wrap">
@@ -67,7 +67,7 @@ export default function Projects() {
                   initial={{ x: -100, opacity: 0 }}
                   transition={{ duration: 0.5 }}
                 >
-                  <div className="w-full lg:flex lg:items-center lg:absolute lg:-z-10 lg:border lg:border-stone-300/30 lg:w-1/4 lg:border-b-0 lg:border-r-0 lg:rounded-lg overflow-hidden lg:p-2">
+                  <div className="w-full lg:flex lg:items-center lg:absolute lg:-z-10 lg:border lg:border-gray-300/30 lg:w-1/4 lg:border-b-0 lg:border-r-0 lg:rounded-lg overflow-hidden lg:p-2">
                     <Image
                       src={item.image}
                       alt={item.title}
@@ -80,7 +80,7 @@ export default function Projects() {
                     <h3 className="mb-2 font-semibold text-2xl">
                       {item.title}
                     </h3>
-                    <p className="mb-4 text-stone-400 leading-loose">
+                    <p className="mb-4 text-gray-400 leading-loose">
                       {item.description}
                     </p>
                     <div className="lg:flex lg:items-center lg:justify-start lg:flex-wrap">

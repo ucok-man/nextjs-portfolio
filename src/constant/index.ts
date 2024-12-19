@@ -1,6 +1,5 @@
 import github from "../assets/navbar/github.svg";
 import instagram from "../assets/navbar/instagram.svg";
-import linkedin from "../assets/navbar/linkedin.svg";
 import twitter from "../assets/navbar/x.svg";
 
 import project1 from "../assets/projects/project1.webp";
@@ -8,10 +7,6 @@ import project2 from "../assets/projects/project2.webp";
 import project3 from "../assets/projects/project3.webp";
 
 export const PROFILE_LINKS = [
-  {
-    svg: linkedin,
-    url: "https://linkedin.com",
-  },
   {
     svg: github,
     url: "https://github.com",
@@ -28,25 +23,25 @@ export const PROFILE_LINKS = [
 
 export const EXPERIENCES = [
   {
-    year: "2023 - Present",
-    role: "Senior DevOps Engineer",
-    company: "Amazon Web Services",
-    description: `Led initiatives to automate deployment pipelines using AWS services and Terraform. Implemented containerized microservices with Docker and orchestrated them with Kubernetes. Enhanced CI/CD workflows, improving deployment speed and reducing downtime.`,
-    technologies: ["AWS", "Docker", "Kubernetes", "Terraform", "Jenkins"],
+    year: "2022 - Present",
+    role: "Senior Fullstack Developer",
+    company: "Meta",
+    description: `Led the development of scalable web applications using React and Node.js. Improved application performance by 30% through optimized code and database queries. Mentored junior developers and contributed to design system enhancements.`,
+    technologies: ["React", "Node.js", "GraphQL", "PostgreSQL", "Docker"],
   },
   {
-    year: "2021 - 2023",
-    role: "DevOps Engineer",
-    company: "Microsoft",
-    description: `Architected and maintained scalable infrastructure on Azure, ensuring 99.9% uptime. Automated configuration management processes using Ansible and Terraform. Collaborated with development teams to improve build processes and integrate CI/CD pipelines.`,
-    technologies: ["Azure", "Terraform", "Ansible", "Bash", "GitLab CI"],
+    year: "2020 - 2022",
+    role: "Fullstack Developer",
+    company: "Netflix",
+    description: `Built interactive user interfaces for streaming platforms using React and Redux. Developed and maintained RESTful APIs to handle millions of user requests daily. Integrated third-party payment gateways and ensured a seamless user experience.`,
+    technologies: ["React", "Redux", "Express.js", "MongoDB", "AWS"],
   },
   {
-    year: "2020 - 2021",
-    role: "Cloud Infrastructure Engineer",
-    company: "Google Cloud",
-    description: `Designed and managed cloud infrastructure for high-traffic applications. Implemented monitoring and logging solutions using Prometheus and Grafana. Assisted in migrating legacy systems to Google Cloud Platform, ensuring minimal service disruption.`,
-    technologies: ["Google Cloud", "Prometheus", "Grafana", "Python", "Helm"],
+    year: "2018 - 2020",
+    role: "Junior Fullstack Developer",
+    company: "Shopify",
+    description: `Collaborated with cross-functional teams to deliver e-commerce solutions. Built reusable UI components and backend services. Conducted code reviews and wrote unit tests, ensuring high code quality.`,
+    technologies: ["Vue.js", "Node.js", "MySQL", "Firebase", "Jest"],
   },
 ];
 

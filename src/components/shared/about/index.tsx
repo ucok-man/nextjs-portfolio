@@ -15,7 +15,7 @@ export default function AboutMe() {
         About Me
       </motion.h2>
       <motion.div
-        className="flex-col flex-wrap items-center justify-center gap-4 text-center text-stone-300/80 tracking-wider leading-loose lg:leading-10"
+        className="flex-col flex-wrap items-center justify-center gap-4 text-center text-gray-300/80 tracking-wider leading-loose lg:leading-10"
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 0.5 }}

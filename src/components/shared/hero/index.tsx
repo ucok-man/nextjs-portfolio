@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import { ArrowDownToLine } from "lucide-react";
 import { motion } from "motion/react";
 import Image from "next/image";
 
@@ -75,7 +76,7 @@ export default function Hero() {
               Alvin Odhi Nusantara.
             </motion.h2>
             <motion.p
-              className="bg-gradient-to-r from-stone-300 font-extralight font-mono to-stone-600 bg-clip-text text-2xl lg:text-4xl text-transparent mb-4"
+              className="bg-gradient-to-r from-gray-300 font-extralight font-mono to-gray-600 bg-clip-text text-2xl lg:text-4xl text-transparent mb-4"
               variants={{
                 hidden: { opacity: 0, x: -100 },
                 visible: {
@@ -87,10 +88,10 @@ export default function Hero() {
                 },
               }}
             >
-              I build the Web
+              I Create Websites
             </motion.p>
             <motion.p
-              className="mb-12 text-center text-stone-300/80 lg:text-left tracking-wider leading-loose"
+              className="mb-12 text-center text-gray-300/80 lg:text-left tracking-wider leading-loose"
               variants={{
                 hidden: { opacity: 0, x: -100 },
                 visible: {
@@ -109,7 +110,7 @@ export default function Hero() {
             <Button
               asChild
               variant="secondary"
-              className="p-5 text-sm font-bold bg-stone-300 text-stone-800 mb-10 hover:bg-stone-300/90"
+              className="p-5 text-sm font-bold bg-gray-300 text-gray-800 mb-10 hover:bg-gray-300/90"
             >
               <motion.a
                 href="/resume.example.pdf"
@@ -127,6 +128,7 @@ export default function Hero() {
                   },
                 }}
               >
+                <ArrowDownToLine size={18} />
                 Donwload Resume
               </motion.a>
             </Button>

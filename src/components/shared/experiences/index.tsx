@@ -33,18 +33,18 @@ export default function Experiences() {
                 transition={{ duration: 0.5 }}
               >
                 <div className="w-full lg:w-1/4 flex items-center">
-                  <p className="mb-2 text-sm font-mono text-stone-400">
+                  <p className="mb-2 text-sm font-mono text-gray-400">
                     {item.year}
                   </p>
                 </div>
                 <div className="w-full max-w-xl lg:w-3/4">
                   <h3 className="mb-2 font-semibold text-lg">
                     {item.role} -{" "}
-                    <span className="font-mono text-sm text-stone-500">
+                    <span className="font-mono text-sm text-gray-500">
                       {item.company}
                     </span>
                   </h3>
-                  <p className="mb-4 text-stone-400 leading-loose ">
+                  <p className="mb-4 text-gray-400 leading-loose ">
                     {item.description}
                   </p>
                   <div className="flex items-center flex-wrap">
